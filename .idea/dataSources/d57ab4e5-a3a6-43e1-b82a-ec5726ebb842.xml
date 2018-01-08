@@ -15,8 +15,8 @@
     </database>
     <schema id="5" parent="2" name="s223552">
       <ObjectId>19197</ObjectId>
-      <IntrospectionTimestamp>2017-12-06.16:01:29.854</IntrospectionTimestamp>
-      <IntrospectionStateNumber>6077911</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-01-08.20:08:32.605</IntrospectionTimestamp>
+      <IntrospectionStateNumber>6088744</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -2945,67 +2945,71 @@
       <ObjectId>1142906</ObjectId>
       <StateNumber>6077747</StateNumber>
     </table>
-    <table id="972" parent="5" name="АВТОР_ЯЗЫКА">
+    <table id="972" parent="5" name="users">
+      <ObjectId>1170294</ObjectId>
+      <StateNumber>6088744</StateNumber>
+    </table>
+    <table id="973" parent="5" name="АВТОР_ЯЗЫКА">
       <ObjectId>937040</ObjectId>
       <StateNumber>4734060</StateNumber>
     </table>
-    <table id="973" parent="5" name="АВТОРЫ">
+    <table id="974" parent="5" name="АВТОРЫ">
       <ObjectId>937026</ObjectId>
       <StateNumber>4734060</StateNumber>
     </table>
-    <table id="974" parent="5" name="ВИД_ЭЛЕМЕНТА">
+    <table id="975" parent="5" name="ВИД_ЭЛЕМЕНТА">
       <ObjectId>936167</ObjectId>
       <StateNumber>4733583</StateNumber>
     </table>
-    <table id="975" parent="5" name="ВОЗМОЖНОСТИ">
+    <table id="976" parent="5" name="ВОЗМОЖНОСТИ">
       <ObjectId>964249</ObjectId>
       <StateNumber>4760773</StateNumber>
     </table>
-    <table id="976" parent="5" name="ВОЗМОЖНОСТИ_ЯЗЫКА">
+    <table id="977" parent="5" name="ВОЗМОЖНОСТИ_ЯЗЫКА">
       <ObjectId>964708</ObjectId>
       <StateNumber>4760773</StateNumber>
     </table>
-    <table id="977" parent="5" name="ДОП_ХАРАКТЕРИСТИКИ_ЯЗЫКА">
+    <table id="978" parent="5" name="ДОП_ХАРАКТЕРИСТИКИ_ЯЗЫКА">
       <ObjectId>936369</ObjectId>
       <StateNumber>4733596</StateNumber>
     </table>
-    <table id="978" parent="5" name="ДОПОЛНИТЕЛЬНЫЕ_ХАРАКТЕРИСТИКИ">
+    <table id="979" parent="5" name="ДОПОЛНИТЕЛЬНЫЕ_ХАРАКТЕРИСТИКИ">
       <ObjectId>936358</ObjectId>
       <StateNumber>4733596</StateNumber>
     </table>
-    <table id="979" parent="5" name="ИЕРАРХИЯ">
+    <table id="980" parent="5" name="ИЕРАРХИЯ">
       <ObjectId>936197</ObjectId>
       <StateNumber>4733584</StateNumber>
     </table>
-    <table id="980" parent="5" name="КЛАСС_ЯЗЫКА">
+    <table id="981" parent="5" name="КЛАСС_ЯЗЫКА">
       <ObjectId>936341</ObjectId>
       <StateNumber>4733594</StateNumber>
     </table>
-    <table id="981" parent="5" name="КТО_ГОВОРИТ">
+    <table id="982" parent="5" name="КТО_ГОВОРИТ">
       <ObjectId>936282</ObjectId>
       <StateNumber>4733590</StateNumber>
     </table>
-    <table id="982" parent="5" name="НАЦИОНАЛЬНОСТЬ_И_МЕСТОПОЛОЖЕНИЕ">
+    <table id="983" parent="5" name="НАЦИОНАЛЬНОСТЬ_И_МЕСТОПОЛОЖЕНИЕ">
       <ObjectId>936271</ObjectId>
       <StateNumber>4734059</StateNumber>
     </table>
-    <table id="983" parent="5" name="ПАРАДИГМЫ">
+    <table id="984" parent="5" name="ПАРАДИГМЫ">
       <ObjectId>936330</ObjectId>
       <StateNumber>4733594</StateNumber>
     </table>
-    <table id="984" parent="5" name="РАСШИРЕНИЯ">
+    <table id="985" parent="5" name="РАСШИРЕНИЯ">
       <ObjectId>936215</ObjectId>
       <StateNumber>4733586</StateNumber>
     </table>
-    <table id="985" parent="5" name="РАСШИРЕНИЯ_ЯЗЫКА">
+    <table id="986" parent="5" name="РАСШИРЕНИЯ_ЯЗЫКА">
       <ObjectId>936226</ObjectId>
       <StateNumber>4733586</StateNumber>
     </table>
-    <table id="986" parent="5" name="ЭЛЕМЕНТ">
+    <table id="987" parent="5" name="ЭЛЕМЕНТ">
       <ObjectId>936180</ObjectId>
       <StateNumber>4760773</StateNumber>
     </table>
-    <routine id="987" parent="5" name="connect">
+    <routine id="988" parent="5" name="connect">
       <ObjectId>939121</ObjectId>
       <StateNumber>4746264</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3013,7 +3017,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="988" parent="5" name="connectautors">
+    <routine id="989" parent="5" name="connectautors">
       <ObjectId>937659</ObjectId>
       <StateNumber>4734665</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3021,7 +3025,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="989" parent="5" name="connectopp">
+    <routine id="990" parent="5" name="connectopp">
       <ObjectId>964747</ObjectId>
       <StateNumber>4760778</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3029,7 +3033,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="990" parent="5" name="connectpar">
+    <routine id="991" parent="5" name="connectpar">
       <ObjectId>936506</ObjectId>
       <StateNumber>4733853</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3037,7 +3041,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="991" parent="5" name="connectras">
+    <routine id="992" parent="5" name="connectras">
       <ObjectId>936455</ObjectId>
       <StateNumber>4733732</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3045,7 +3049,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="992" parent="5" name="connectsomeautors">
+    <routine id="993" parent="5" name="connectsomeautors">
       <ObjectId>938159</ObjectId>
       <StateNumber>4734892</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3053,7 +3057,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="993" parent="5" name="connectspeakers">
+    <routine id="994" parent="5" name="connectspeakers">
       <ObjectId>936429</ObjectId>
       <StateNumber>4733657</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3061,7 +3065,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="994" parent="5" name="deadoralive">
+    <routine id="995" parent="5" name="deadoralive">
       <ObjectId>936389</ObjectId>
       <StateNumber>4733599</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3069,7 +3073,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="995" parent="5" name="seta">
+    <routine id="996" parent="5" name="seta">
       <ObjectId>1025556</ObjectId>
       <StateNumber>5234997</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3077,7 +3081,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="996" parent="5" name="seta1">
+    <routine id="997" parent="5" name="seta1">
       <ObjectId>1025567</ObjectId>
       <StateNumber>5235022</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3085,7 +3089,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="997" parent="5" name="setautors">
+    <routine id="998" parent="5" name="setautors">
       <ObjectId>937553</ObjectId>
       <StateNumber>4734324</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3093,7 +3097,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="998" parent="5" name="setfam">
+    <routine id="999" parent="5" name="setfam">
       <ObjectId>936423</ObjectId>
       <StateNumber>4733647</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3101,7 +3105,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="999" parent="5" name="setgroup">
+    <routine id="1000" parent="5" name="setgroup">
       <ObjectId>936425</ObjectId>
       <StateNumber>4733651</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3109,7 +3113,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="1000" parent="5" name="setmain">
+    <routine id="1001" parent="5" name="setmain">
       <ObjectId>936422</ObjectId>
       <StateNumber>4733644</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3117,7 +3121,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="1001" parent="5" name="setoport">
+    <routine id="1002" parent="5" name="setoport">
       <ObjectId>936400</ObjectId>
       <StateNumber>4733623</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3125,7 +3129,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="1002" parent="5" name="setparadigms">
+    <routine id="1003" parent="5" name="setparadigms">
       <ObjectId>936396</ObjectId>
       <StateNumber>4733616</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3133,7 +3137,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="1003" parent="5" name="setprog">
+    <routine id="1004" parent="5" name="setprog">
       <ObjectId>936431</ObjectId>
       <StateNumber>4733661</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3141,7 +3145,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="1004" parent="5" name="setras">
+    <routine id="1005" parent="5" name="setras">
       <ObjectId>936397</ObjectId>
       <StateNumber>4733618</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3149,7 +3153,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="1005" parent="5" name="setspeakers">
+    <routine id="1006" parent="5" name="setspeakers">
       <ObjectId>936428</ObjectId>
       <StateNumber>4733655</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3157,7 +3161,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="1006" parent="5" name="setvetv">
+    <routine id="1007" parent="5" name="setvetv">
       <ObjectId>936424</ObjectId>
       <StateNumber>4733649</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3165,7 +3169,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="1007" parent="5" name="someautors">
+    <routine id="1008" parent="5" name="someautors">
       <ObjectId>938153</ObjectId>
       <StateNumber>4734872</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3173,7 +3177,7 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <routine id="1008" parent="5" name="uho">
+    <routine id="1009" parent="5" name="uho">
       <ObjectId>936387</ObjectId>
       <StateNumber>4733597</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
@@ -3181,111 +3185,148 @@
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
     </routine>
-    <column id="1009" parent="969" name="id">
+    <column id="1010" parent="969" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>6077911</StateNumber>
     </column>
-    <column id="1010" parent="969" name="radius">
+    <column id="1011" parent="969" name="radius">
       <Position>2</Position>
       <DataType>double precision|0</DataType>
       <StateNumber>6077911</StateNumber>
     </column>
-    <column id="1011" parent="969" name="status">
+    <column id="1012" parent="969" name="status">
       <Position>3</Position>
       <DataType>boolean|0</DataType>
       <StateNumber>6077911</StateNumber>
     </column>
-    <column id="1012" parent="969" name="x">
+    <column id="1013" parent="969" name="x">
       <Position>4</Position>
       <DataType>double precision|0</DataType>
       <StateNumber>6077911</StateNumber>
     </column>
-    <column id="1013" parent="969" name="y">
+    <column id="1014" parent="969" name="y">
       <Position>5</Position>
       <DataType>double precision|0</DataType>
       <StateNumber>6077911</StateNumber>
     </column>
-    <index id="1014" parent="969" name="results_pkey">
+    <index id="1015" parent="969" name="results_pkey">
       <ObjectId>1143032</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1015" parent="969" name="results_pkey">
+    <key id="1016" parent="969" name="results_pkey">
       <ObjectId>1143033</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>results_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="1016" parent="970" name="x">
+    <column id="1017" parent="970" name="x">
       <Position>1</Position>
       <DataType>double precision|0</DataType>
       <StateNumber>6077783</StateNumber>
     </column>
-    <column id="1017" parent="970" name="y">
+    <column id="1018" parent="970" name="y">
       <Position>2</Position>
       <DataType>double precision|0</DataType>
       <StateNumber>6077783</StateNumber>
     </column>
-    <column id="1018" parent="970" name="radius">
+    <column id="1019" parent="970" name="radius">
       <Position>3</Position>
       <DataType>double precision|0</DataType>
       <StateNumber>6077783</StateNumber>
     </column>
-    <column id="1019" parent="970" name="status">
+    <column id="1020" parent="970" name="status">
       <Position>4</Position>
       <DataType>boolean|0</DataType>
       <StateNumber>6077783</StateNumber>
     </column>
-    <column id="1020" parent="971" name="seq_name">
+    <column id="1021" parent="971" name="seq_name">
       <Position>1</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>6077747</StateNumber>
     </column>
-    <column id="1021" parent="971" name="seq_count">
+    <column id="1022" parent="971" name="seq_count">
       <Position>2</Position>
       <DataType>numeric(38)|0</DataType>
       <StateNumber>6077747</StateNumber>
     </column>
-    <index id="1022" parent="971" name="sequence_pkey">
+    <index id="1023" parent="971" name="sequence_pkey">
       <ObjectId>1142909</ObjectId>
       <ColNames>seq_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1023" parent="971" name="sequence_pkey">
+    <key id="1024" parent="971" name="sequence_pkey">
       <ObjectId>1142910</ObjectId>
       <ColNames>seq_name</ColNames>
       <UnderlyingIndexName>sequence_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="1024" parent="972" name="ИД_ЯЗЫКА">
+    <column id="1025" parent="972" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>6088744</StateNumber>
+    </column>
+    <column id="1026" parent="972" name="login">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>6088744</StateNumber>
+    </column>
+    <column id="1027" parent="972" name="password">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>6088744</StateNumber>
+    </column>
+    <index id="1028" parent="972" name="users_pkey">
+      <ObjectId>1170300</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="1029" parent="972" name="users_login_key">
+      <ObjectId>1170302</ObjectId>
+      <ColNames>login</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="1030" parent="972" name="users_pkey">
+      <ObjectId>1170301</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="1031" parent="972" name="users_login_key">
+      <ObjectId>1170303</ObjectId>
+      <ColNames>login</ColNames>
+      <UnderlyingIndexName>users_login_key</UnderlyingIndexName>
+    </key>
+    <column id="1032" parent="973" name="ИД_ЯЗЫКА">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4734060</StateNumber>
     </column>
-    <column id="1025" parent="972" name="ИД_АВТОРА">
+    <column id="1033" parent="973" name="ИД_АВТОРА">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4734060</StateNumber>
     </column>
-    <index id="1026" parent="972" name="АВТОР_ЯЗЫКА_pkey">
+    <index id="1034" parent="973" name="АВТОР_ЯЗЫКА_pkey">
       <ObjectId>937043</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_АВТОРА</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1027" parent="972" name="АВТОР_ЯЗЫКА_pkey">
+    <key id="1035" parent="973" name="АВТОР_ЯЗЫКА_pkey">
       <ObjectId>937044</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_АВТОРА</ColNames>
       <UnderlyingIndexName>АВТОР_ЯЗЫКА_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1028" parent="972" name="АВТОР_ЯЗЫКА_ИД_ЯЗЫКА_fkey">
+    <foreign-key id="1036" parent="973" name="АВТОР_ЯЗЫКА_ИД_ЯЗЫКА_fkey">
       <ObjectId>937045</ObjectId>
       <ColNames>ИД_ЯЗЫКА</ColNames>
       <RefTableId>936180</RefTableId>
@@ -3296,7 +3337,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="1029" parent="972" name="АВТОР_ЯЗЫКА_ИД_АВТОРА_fkey">
+    <foreign-key id="1037" parent="973" name="АВТОР_ЯЗЫКА_ИД_АВТОРА_fkey">
       <ObjectId>937050</ObjectId>
       <ColNames>ИД_АВТОРА</ColNames>
       <RefTableId>937026</RefTableId>
@@ -3307,7 +3348,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="1030" parent="973" name="ИД_АВТОРА">
+    <column id="1038" parent="974" name="ИД_АВТОРА">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -3315,45 +3356,45 @@
       <SequenceName>АВТОРЫ_ИД_АВТОРА_seq</SequenceName>
       <DefaultExpression>nextval(&apos;&quot;АВТОРЫ_ИД_АВТОРА_seq&quot;&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="1031" parent="973" name="ИМЯ">
+    <column id="1039" parent="974" name="ИМЯ">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4734059</StateNumber>
     </column>
-    <column id="1032" parent="973" name="ФАМИЛИЯ">
+    <column id="1040" parent="974" name="ФАМИЛИЯ">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4734059</StateNumber>
     </column>
-    <column id="1033" parent="973" name="ИД_НАЦИОНАЛЬНОСТИ">
+    <column id="1041" parent="974" name="ИД_НАЦИОНАЛЬНОСТИ">
       <Position>4</Position>
       <DataType>integer|0</DataType>
       <StateNumber>4734059</StateNumber>
     </column>
-    <column id="1034" parent="973" name="ДАТА_РОЖДЕНИЯ">
+    <column id="1042" parent="974" name="ДАТА_РОЖДЕНИЯ">
       <Position>5</Position>
       <DataType>date|0</DataType>
       <StateNumber>4734059</StateNumber>
     </column>
-    <column id="1035" parent="973" name="ДАТА_СМЕРТИ">
+    <column id="1043" parent="974" name="ДАТА_СМЕРТИ">
       <Position>6</Position>
       <DataType>date|0</DataType>
       <StateNumber>4734059</StateNumber>
     </column>
-    <index id="1036" parent="973" name="АВТОРЫ_pkey">
+    <index id="1044" parent="974" name="АВТОРЫ_pkey">
       <ObjectId>937033</ObjectId>
       <ColNames>ИД_АВТОРА</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1037" parent="973" name="АВТОРЫ_pkey">
+    <key id="1045" parent="974" name="АВТОРЫ_pkey">
       <ObjectId>937034</ObjectId>
       <ColNames>ИД_АВТОРА</ColNames>
       <UnderlyingIndexName>АВТОРЫ_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1038" parent="973" name="АВТОРЫ_ИД_НАЦИОНАЛЬНОСТИ_fkey">
+    <foreign-key id="1046" parent="974" name="АВТОРЫ_ИД_НАЦИОНАЛЬНОСТИ_fkey">
       <ObjectId>937035</ObjectId>
       <ColNames>ИД_НАЦИОНАЛЬНОСТИ</ColNames>
       <RefTableId>936271</RefTableId>
@@ -3364,7 +3405,7 @@
       <OnDelete>set-null</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="1039" parent="974" name="ИД_ВИДА">
+    <column id="1047" parent="975" name="ИД_ВИДА">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -3372,42 +3413,42 @@
       <SequenceName>ВИД_ЭЛЕМЕНТА_ИД_ВИДА_seq</SequenceName>
       <DefaultExpression>nextval(&apos;&quot;ВИД_ЭЛЕМЕНТА_ИД_ВИДА_seq&quot;&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="1040" parent="974" name="ВИД">
+    <column id="1048" parent="975" name="ВИД">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733582</StateNumber>
     </column>
-    <column id="1041" parent="974" name="ПОДВИД">
+    <column id="1049" parent="975" name="ПОДВИД">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733582</StateNumber>
     </column>
-    <index id="1042" parent="974" name="ВИД_ЭЛЕМЕНТА_pkey">
+    <index id="1050" parent="975" name="ВИД_ЭЛЕМЕНТА_pkey">
       <ObjectId>936174</ObjectId>
       <ColNames>ИД_ВИДА</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="1043" parent="974" name="ВИД_ЭЛЕМЕНТА_ВИД_ПОДВИД_key">
+    <index id="1051" parent="975" name="ВИД_ЭЛЕМЕНТА_ВИД_ПОДВИД_key">
       <ObjectId>936176</ObjectId>
       <ColNames>ВИД
 ПОДВИД</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1044" parent="974" name="ВИД_ЭЛЕМЕНТА_pkey">
+    <key id="1052" parent="975" name="ВИД_ЭЛЕМЕНТА_pkey">
       <ObjectId>936175</ObjectId>
       <ColNames>ИД_ВИДА</ColNames>
       <UnderlyingIndexName>ВИД_ЭЛЕМЕНТА_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="1045" parent="974" name="ВИД_ЭЛЕМЕНТА_ВИД_ПОДВИД_key">
+    <key id="1053" parent="975" name="ВИД_ЭЛЕМЕНТА_ВИД_ПОДВИД_key">
       <ObjectId>936177</ObjectId>
       <ColNames>ВИД
 ПОДВИД</ColNames>
       <UnderlyingIndexName>ВИД_ЭЛЕМЕНТА_ВИД_ПОДВИД_key</UnderlyingIndexName>
     </key>
-    <column id="1046" parent="975" name="ИД_ВОЗМОЖНОСТИ">
+    <column id="1054" parent="976" name="ИД_ВОЗМОЖНОСТИ">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -3415,64 +3456,64 @@
       <SequenceName>ВОЗМОЖНОСТИ_ИД_ВОЗМОЖНОСТИ_seq</SequenceName>
       <DefaultExpression>nextval(&apos;&quot;ВОЗМОЖНОСТИ_ИД_ВОЗМОЖНОСТИ_seq&quot;&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="1047" parent="975" name="ВОЗМОЖНОСТЬ">
+    <column id="1055" parent="976" name="ВОЗМОЖНОСТЬ">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4760658</StateNumber>
     </column>
-    <column id="1048" parent="975" name="ВЕРСИЯ">
+    <column id="1056" parent="976" name="ВЕРСИЯ">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <StateNumber>4760658</StateNumber>
     </column>
-    <index id="1049" parent="975" name="ВОЗМОЖНОСТИ_pkey">
+    <index id="1057" parent="976" name="ВОЗМОЖНОСТИ_pkey">
       <ObjectId>964256</ObjectId>
       <ColNames>ИД_ВОЗМОЖНОСТИ</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="1050" parent="975" name="ВОЗМОЖНОСТИ_ВОЗМОЖНОСТЬ_key">
+    <index id="1058" parent="976" name="ВОЗМОЖНОСТИ_ВОЗМОЖНОСТЬ_key">
       <ObjectId>964258</ObjectId>
       <ColNames>ВОЗМОЖНОСТЬ</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1051" parent="975" name="ВОЗМОЖНОСТИ_pkey">
+    <key id="1059" parent="976" name="ВОЗМОЖНОСТИ_pkey">
       <ObjectId>964257</ObjectId>
       <ColNames>ИД_ВОЗМОЖНОСТИ</ColNames>
       <UnderlyingIndexName>ВОЗМОЖНОСТИ_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="1052" parent="975" name="ВОЗМОЖНОСТИ_ВОЗМОЖНОСТЬ_key">
+    <key id="1060" parent="976" name="ВОЗМОЖНОСТИ_ВОЗМОЖНОСТЬ_key">
       <ObjectId>964259</ObjectId>
       <ColNames>ВОЗМОЖНОСТЬ</ColNames>
       <UnderlyingIndexName>ВОЗМОЖНОСТИ_ВОЗМОЖНОСТЬ_key</UnderlyingIndexName>
     </key>
-    <column id="1053" parent="976" name="ИД_ЯЗЫКА">
+    <column id="1061" parent="977" name="ИД_ЯЗЫКА">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4760773</StateNumber>
     </column>
-    <column id="1054" parent="976" name="ИД_ВОЗМОЖНОСТИ">
+    <column id="1062" parent="977" name="ИД_ВОЗМОЖНОСТИ">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4760773</StateNumber>
     </column>
-    <index id="1055" parent="976" name="ВОЗМОЖНОСТИ_ЯЗЫКА_pkey">
+    <index id="1063" parent="977" name="ВОЗМОЖНОСТИ_ЯЗЫКА_pkey">
       <ObjectId>964711</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_ВОЗМОЖНОСТИ</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1056" parent="976" name="ВОЗМОЖНОСТИ_ЯЗЫКА_pkey">
+    <key id="1064" parent="977" name="ВОЗМОЖНОСТИ_ЯЗЫКА_pkey">
       <ObjectId>964712</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_ВОЗМОЖНОСТИ</ColNames>
       <UnderlyingIndexName>ВОЗМОЖНОСТИ_ЯЗЫКА_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1057" parent="976" name="ВОЗМОЖНОСТИ_ЯЗЫКА_ИД_ЯЗЫКА_fkey">
+    <foreign-key id="1065" parent="977" name="ВОЗМОЖНОСТИ_ЯЗЫКА_ИД_ЯЗЫКА_fkey">
       <ObjectId>964713</ObjectId>
       <ColNames>ИД_ЯЗЫКА</ColNames>
       <RefTableId>936180</RefTableId>
@@ -3483,7 +3524,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="1058" parent="976" name="ВОЗМОЖНОСТИ_ЯЗЫ_ИД_ВОЗМОЖНОСТИ_fkey">
+    <foreign-key id="1066" parent="977" name="ВОЗМОЖНОСТИ_ЯЗЫ_ИД_ВОЗМОЖНОСТИ_fkey">
       <ObjectId>964718</ObjectId>
       <ColNames>ИД_ВОЗМОЖНОСТИ</ColNames>
       <RefTableId>964249</RefTableId>
@@ -3494,47 +3535,47 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="1059" parent="977" name="ИД_ЯЗЫКА">
+    <column id="1067" parent="978" name="ИД_ЯЗЫКА">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733596</StateNumber>
     </column>
-    <column id="1060" parent="977" name="ИД_ХАРАКТЕРИСТИКИ">
+    <column id="1068" parent="978" name="ИД_ХАРАКТЕРИСТИКИ">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733596</StateNumber>
     </column>
-    <column id="1061" parent="977" name="ТЕКСТОВОЕ_ЗНАЧЕНИЕ">
+    <column id="1069" parent="978" name="ТЕКСТОВОЕ_ЗНАЧЕНИЕ">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <StateNumber>4733596</StateNumber>
     </column>
-    <column id="1062" parent="977" name="ЧИСЛЕННОЕ_ЗНАЧЕНИЕ">
+    <column id="1070" parent="978" name="ЧИСЛЕННОЕ_ЗНАЧЕНИЕ">
       <Position>4</Position>
       <DataType>integer|0</DataType>
       <StateNumber>4733596</StateNumber>
     </column>
-    <column id="1063" parent="977" name="ДАТА">
+    <column id="1071" parent="978" name="ДАТА">
       <Position>5</Position>
       <DataType>date|0</DataType>
       <StateNumber>4733596</StateNumber>
     </column>
-    <index id="1064" parent="977" name="ДОП_ХАРАКТЕРИСТИКИ_ЯЗЫКА_pkey">
+    <index id="1072" parent="978" name="ДОП_ХАРАКТЕРИСТИКИ_ЯЗЫКА_pkey">
       <ObjectId>936375</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_ХАРАКТЕРИСТИКИ</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1065" parent="977" name="ДОП_ХАРАКТЕРИСТИКИ_ЯЗЫКА_pkey">
+    <key id="1073" parent="978" name="ДОП_ХАРАКТЕРИСТИКИ_ЯЗЫКА_pkey">
       <ObjectId>936376</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_ХАРАКТЕРИСТИКИ</ColNames>
       <UnderlyingIndexName>ДОП_ХАРАКТЕРИСТИКИ_ЯЗЫКА_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1066" parent="977" name="ДОП_ХАРАКТЕРИСТИКИ_ЯЗЫ_ИД_ЯЗЫКА_fkey">
+    <foreign-key id="1074" parent="978" name="ДОП_ХАРАКТЕРИСТИКИ_ЯЗЫ_ИД_ЯЗЫКА_fkey">
       <ObjectId>936377</ObjectId>
       <ColNames>ИД_ЯЗЫКА</ColNames>
       <RefTableId>936180</RefTableId>
@@ -3545,7 +3586,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="1067" parent="977" name="ДОП_ХАРАКТЕРИСТ_ИД_ХАРАКТЕРИСТ_fkey">
+    <foreign-key id="1075" parent="978" name="ДОП_ХАРАКТЕРИСТ_ИД_ХАРАКТЕРИСТ_fkey">
       <ObjectId>936382</ObjectId>
       <ColNames>ИД_ХАРАКТЕРИСТИКИ</ColNames>
       <RefTableId>936358</RefTableId>
@@ -3556,7 +3597,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="1068" parent="978" name="ИД_ХАРАКТЕРИСТИКИ">
+    <column id="1076" parent="979" name="ИД_ХАРАКТЕРИСТИКИ">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -3564,62 +3605,62 @@
       <SequenceName>ДОПОЛНИТЕЛЬНЫЕ__ИД_ХАРАКТЕРИСТИ_seq</SequenceName>
       <DefaultExpression>nextval(&apos;&quot;ДОПОЛНИТЕЛЬНЫЕ__ИД_ХАРАКТЕРИСТИ_seq&quot;&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="1069" parent="978" name="НАИМЕНОВАНИЕ">
+    <column id="1077" parent="979" name="НАИМЕНОВАНИЕ">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733595</StateNumber>
     </column>
-    <index id="1070" parent="978" name="ДОПОЛНИТЕЛЬНЫЕ_ХАРАКТЕРИСТИКИ_pkey">
+    <index id="1078" parent="979" name="ДОПОЛНИТЕЛЬНЫЕ_ХАРАКТЕРИСТИКИ_pkey">
       <ObjectId>936365</ObjectId>
       <ColNames>ИД_ХАРАКТЕРИСТИКИ</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="1071" parent="978" name="ДОПОЛНИТЕЛЬНЫЕ_ХА_НАИМЕНОВАНИЕ_key">
+    <index id="1079" parent="979" name="ДОПОЛНИТЕЛЬНЫЕ_ХА_НАИМЕНОВАНИЕ_key">
       <ObjectId>936367</ObjectId>
       <ColNames>НАИМЕНОВАНИЕ</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1072" parent="978" name="ДОПОЛНИТЕЛЬНЫЕ_ХАРАКТЕРИСТИКИ_pkey">
+    <key id="1080" parent="979" name="ДОПОЛНИТЕЛЬНЫЕ_ХАРАКТЕРИСТИКИ_pkey">
       <ObjectId>936366</ObjectId>
       <ColNames>ИД_ХАРАКТЕРИСТИКИ</ColNames>
       <UnderlyingIndexName>ДОПОЛНИТЕЛЬНЫЕ_ХАРАКТЕРИСТИКИ_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="1073" parent="978" name="ДОПОЛНИТЕЛЬНЫЕ_ХА_НАИМЕНОВАНИЕ_key">
+    <key id="1081" parent="979" name="ДОПОЛНИТЕЛЬНЫЕ_ХА_НАИМЕНОВАНИЕ_key">
       <ObjectId>936368</ObjectId>
       <ColNames>НАИМЕНОВАНИЕ</ColNames>
       <UnderlyingIndexName>ДОПОЛНИТЕЛЬНЫЕ_ХА_НАИМЕНОВАНИЕ_key</UnderlyingIndexName>
     </key>
-    <column id="1074" parent="979" name="ЭЛЕМЕНТ">
+    <column id="1082" parent="980" name="ЭЛЕМЕНТ">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733584</StateNumber>
     </column>
-    <column id="1075" parent="979" name="ПРЕДОК">
+    <column id="1083" parent="980" name="ПРЕДОК">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <StateNumber>4733584</StateNumber>
     </column>
-    <column id="1076" parent="979" name="УРОВЕНЬ">
+    <column id="1084" parent="980" name="УРОВЕНЬ">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <StateNumber>4733584</StateNumber>
       <DefaultExpression>4</DefaultExpression>
     </column>
-    <index id="1077" parent="979" name="ИЕРАРХИЯ_pkey">
+    <index id="1085" parent="980" name="ИЕРАРХИЯ_pkey">
       <ObjectId>936201</ObjectId>
       <ColNames>ЭЛЕМЕНТ</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1078" parent="979" name="ИЕРАРХИЯ_pkey">
+    <key id="1086" parent="980" name="ИЕРАРХИЯ_pkey">
       <ObjectId>936202</ObjectId>
       <ColNames>ЭЛЕМЕНТ</ColNames>
       <UnderlyingIndexName>ИЕРАРХИЯ_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1079" parent="979" name="ИЕРАРХИЯ_ЭЛЕМЕНТ_fkey">
+    <foreign-key id="1087" parent="980" name="ИЕРАРХИЯ_ЭЛЕМЕНТ_fkey">
       <ObjectId>936203</ObjectId>
       <ColNames>ЭЛЕМЕНТ</ColNames>
       <RefTableId>936180</RefTableId>
@@ -3630,7 +3671,7 @@
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="1080" parent="979" name="ИЕРАРХИЯ_ПРЕДОК_fkey">
+    <foreign-key id="1088" parent="980" name="ИЕРАРХИЯ_ПРЕДОК_fkey">
       <ObjectId>936208</ObjectId>
       <ColNames>ПРЕДОК</ColNames>
       <RefTableId>936197</RefTableId>
@@ -3641,32 +3682,32 @@
       <OnDelete>set-null</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="1081" parent="980" name="ИД_ЯЗЫКА">
+    <column id="1089" parent="981" name="ИД_ЯЗЫКА">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733594</StateNumber>
     </column>
-    <column id="1082" parent="980" name="ИД_ПАРАДИГМЫ">
+    <column id="1090" parent="981" name="ИД_ПАРАДИГМЫ">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733594</StateNumber>
     </column>
-    <index id="1083" parent="980" name="КЛАСС_ЯЗЫКА_pkey">
+    <index id="1091" parent="981" name="КЛАСС_ЯЗЫКА_pkey">
       <ObjectId>936344</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_ПАРАДИГМЫ</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1084" parent="980" name="КЛАСС_ЯЗЫКА_pkey">
+    <key id="1092" parent="981" name="КЛАСС_ЯЗЫКА_pkey">
       <ObjectId>936345</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_ПАРАДИГМЫ</ColNames>
       <UnderlyingIndexName>КЛАСС_ЯЗЫКА_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1085" parent="980" name="КЛАСС_ЯЗЫКА_ИД_ЯЗЫКА_fkey">
+    <foreign-key id="1093" parent="981" name="КЛАСС_ЯЗЫКА_ИД_ЯЗЫКА_fkey">
       <ObjectId>936346</ObjectId>
       <ColNames>ИД_ЯЗЫКА</ColNames>
       <RefTableId>936180</RefTableId>
@@ -3677,7 +3718,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="1086" parent="980" name="КЛАСС_ЯЗЫКА_ИД_ПАРАДИГМЫ_fkey">
+    <foreign-key id="1094" parent="981" name="КЛАСС_ЯЗЫКА_ИД_ПАРАДИГМЫ_fkey">
       <ObjectId>936351</ObjectId>
       <ColNames>ИД_ПАРАДИГМЫ</ColNames>
       <RefTableId>936330</RefTableId>
@@ -3688,32 +3729,32 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="1087" parent="981" name="ИД_ЯЗЫКА">
+    <column id="1095" parent="982" name="ИД_ЯЗЫКА">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733590</StateNumber>
     </column>
-    <column id="1088" parent="981" name="ИД_НАЦИОНАЛЬНОСТИ">
+    <column id="1096" parent="982" name="ИД_НАЦИОНАЛЬНОСТИ">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733590</StateNumber>
     </column>
-    <index id="1089" parent="981" name="КТО_ГОВОРИТ_pkey">
+    <index id="1097" parent="982" name="КТО_ГОВОРИТ_pkey">
       <ObjectId>936285</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_НАЦИОНАЛЬНОСТИ</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1090" parent="981" name="КТО_ГОВОРИТ_pkey">
+    <key id="1098" parent="982" name="КТО_ГОВОРИТ_pkey">
       <ObjectId>936286</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_НАЦИОНАЛЬНОСТИ</ColNames>
       <UnderlyingIndexName>КТО_ГОВОРИТ_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1091" parent="981" name="КТО_ГОВОРИТ_ИД_ЯЗЫКА_fkey">
+    <foreign-key id="1099" parent="982" name="КТО_ГОВОРИТ_ИД_ЯЗЫКА_fkey">
       <ObjectId>936287</ObjectId>
       <ColNames>ИД_ЯЗЫКА</ColNames>
       <RefTableId>936180</RefTableId>
@@ -3724,7 +3765,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="1092" parent="981" name="КТО_ГОВОРИТ_ИД_НАЦИОНАЛЬНОСТИ_fkey">
+    <foreign-key id="1100" parent="982" name="КТО_ГОВОРИТ_ИД_НАЦИОНАЛЬНОСТИ_fkey">
       <ObjectId>936292</ObjectId>
       <ColNames>ИД_НАЦИОНАЛЬНОСТИ</ColNames>
       <RefTableId>936271</RefTableId>
@@ -3735,7 +3776,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="1093" parent="982" name="ИД_НАЦИОНАЛЬНОСТИ">
+    <column id="1101" parent="983" name="ИД_НАЦИОНАЛЬНОСТИ">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -3743,48 +3784,48 @@
       <SequenceName>НАЦИОНАЛЬНОСТЬ__ИД_НАЦИОНАЛЬНОС_seq</SequenceName>
       <DefaultExpression>nextval(&apos;&quot;НАЦИОНАЛЬНОСТЬ__ИД_НАЦИОНАЛЬНОС_seq&quot;&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="1094" parent="982" name="НАЦИОНАЛЬНОСТЬ">
+    <column id="1102" parent="983" name="НАЦИОНАЛЬНОСТЬ">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <StateNumber>4733589</StateNumber>
     </column>
-    <column id="1095" parent="982" name="СТРАНА">
+    <column id="1103" parent="983" name="СТРАНА">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733589</StateNumber>
     </column>
-    <column id="1096" parent="982" name="ГОРОД">
+    <column id="1104" parent="983" name="ГОРОД">
       <Position>4</Position>
       <DataType>text|0</DataType>
       <StateNumber>4733589</StateNumber>
     </column>
-    <index id="1097" parent="982" name="НАЦИОНАЛЬНОСТЬ_И_МЕСТОПОЛОЖЕНИ_pkey">
+    <index id="1105" parent="983" name="НАЦИОНАЛЬНОСТЬ_И_МЕСТОПОЛОЖЕНИ_pkey">
       <ObjectId>936278</ObjectId>
       <ColNames>ИД_НАЦИОНАЛЬНОСТИ</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="1098" parent="982" name="НАЦИОНАЛЬНОСТЬ__НАЦИОНАЛЬНОСТЬ__key">
+    <index id="1106" parent="983" name="НАЦИОНАЛЬНОСТЬ__НАЦИОНАЛЬНОСТЬ__key">
       <ObjectId>936280</ObjectId>
       <ColNames>НАЦИОНАЛЬНОСТЬ
 СТРАНА
 ГОРОД</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1099" parent="982" name="НАЦИОНАЛЬНОСТЬ_И_МЕСТОПОЛОЖЕНИ_pkey">
+    <key id="1107" parent="983" name="НАЦИОНАЛЬНОСТЬ_И_МЕСТОПОЛОЖЕНИ_pkey">
       <ObjectId>936279</ObjectId>
       <ColNames>ИД_НАЦИОНАЛЬНОСТИ</ColNames>
       <UnderlyingIndexName>НАЦИОНАЛЬНОСТЬ_И_МЕСТОПОЛОЖЕНИ_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="1100" parent="982" name="НАЦИОНАЛЬНОСТЬ__НАЦИОНАЛЬНОСТЬ__key">
+    <key id="1108" parent="983" name="НАЦИОНАЛЬНОСТЬ__НАЦИОНАЛЬНОСТЬ__key">
       <ObjectId>936281</ObjectId>
       <ColNames>НАЦИОНАЛЬНОСТЬ
 СТРАНА
 ГОРОД</ColNames>
       <UnderlyingIndexName>НАЦИОНАЛЬНОСТЬ__НАЦИОНАЛЬНОСТЬ__key</UnderlyingIndexName>
     </key>
-    <column id="1101" parent="983" name="ИД_ПАРАДИГМЫ">
+    <column id="1109" parent="984" name="ИД_ПАРАДИГМЫ">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -3792,34 +3833,34 @@
       <SequenceName>ПАРАДИГМЫ_ИД_ПАРАДИГМЫ_seq</SequenceName>
       <DefaultExpression>nextval(&apos;&quot;ПАРАДИГМЫ_ИД_ПАРАДИГМЫ_seq&quot;&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="1102" parent="983" name="ПАРАДИГМА">
+    <column id="1110" parent="984" name="ПАРАДИГМА">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733593</StateNumber>
     </column>
-    <index id="1103" parent="983" name="ПАРАДИГМЫ_pkey">
+    <index id="1111" parent="984" name="ПАРАДИГМЫ_pkey">
       <ObjectId>936337</ObjectId>
       <ColNames>ИД_ПАРАДИГМЫ</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="1104" parent="983" name="ПАРАДИГМЫ_ПАРАДИГМА_key">
+    <index id="1112" parent="984" name="ПАРАДИГМЫ_ПАРАДИГМА_key">
       <ObjectId>936339</ObjectId>
       <ColNames>ПАРАДИГМА</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1105" parent="983" name="ПАРАДИГМЫ_pkey">
+    <key id="1113" parent="984" name="ПАРАДИГМЫ_pkey">
       <ObjectId>936338</ObjectId>
       <ColNames>ИД_ПАРАДИГМЫ</ColNames>
       <UnderlyingIndexName>ПАРАДИГМЫ_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="1106" parent="983" name="ПАРАДИГМЫ_ПАРАДИГМА_key">
+    <key id="1114" parent="984" name="ПАРАДИГМЫ_ПАРАДИГМА_key">
       <ObjectId>936340</ObjectId>
       <ColNames>ПАРАДИГМА</ColNames>
       <UnderlyingIndexName>ПАРАДИГМЫ_ПАРАДИГМА_key</UnderlyingIndexName>
     </key>
-    <column id="1107" parent="984" name="ИД_РАСШИРЕНИЯ">
+    <column id="1115" parent="985" name="ИД_РАСШИРЕНИЯ">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -3827,59 +3868,59 @@
       <SequenceName>РАСШИРЕНИЯ_ИД_РАСШИРЕНИЯ_seq</SequenceName>
       <DefaultExpression>nextval(&apos;&quot;РАСШИРЕНИЯ_ИД_РАСШИРЕНИЯ_seq&quot;&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="1108" parent="984" name="РАСШИРЕНИЕ">
+    <column id="1116" parent="985" name="РАСШИРЕНИЕ">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733585</StateNumber>
     </column>
-    <index id="1109" parent="984" name="РАСШИРЕНИЯ_pkey">
+    <index id="1117" parent="985" name="РАСШИРЕНИЯ_pkey">
       <ObjectId>936222</ObjectId>
       <ColNames>ИД_РАСШИРЕНИЯ</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="1110" parent="984" name="РАСШИРЕНИЯ_РАСШИРЕНИЕ_key">
+    <index id="1118" parent="985" name="РАСШИРЕНИЯ_РАСШИРЕНИЕ_key">
       <ObjectId>936224</ObjectId>
       <ColNames>РАСШИРЕНИЕ</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1111" parent="984" name="РАСШИРЕНИЯ_pkey">
+    <key id="1119" parent="985" name="РАСШИРЕНИЯ_pkey">
       <ObjectId>936223</ObjectId>
       <ColNames>ИД_РАСШИРЕНИЯ</ColNames>
       <UnderlyingIndexName>РАСШИРЕНИЯ_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="1112" parent="984" name="РАСШИРЕНИЯ_РАСШИРЕНИЕ_key">
+    <key id="1120" parent="985" name="РАСШИРЕНИЯ_РАСШИРЕНИЕ_key">
       <ObjectId>936225</ObjectId>
       <ColNames>РАСШИРЕНИЕ</ColNames>
       <UnderlyingIndexName>РАСШИРЕНИЯ_РАСШИРЕНИЕ_key</UnderlyingIndexName>
     </key>
-    <column id="1113" parent="985" name="ИД_ЯЗЫКА">
+    <column id="1121" parent="986" name="ИД_ЯЗЫКА">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733586</StateNumber>
     </column>
-    <column id="1114" parent="985" name="ИД_РАСШИРЕНИЯ">
+    <column id="1122" parent="986" name="ИД_РАСШИРЕНИЯ">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733586</StateNumber>
     </column>
-    <index id="1115" parent="985" name="РАСШИРЕНИЯ_ЯЗЫКА_pkey">
+    <index id="1123" parent="986" name="РАСШИРЕНИЯ_ЯЗЫКА_pkey">
       <ObjectId>936229</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_РАСШИРЕНИЯ</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1116" parent="985" name="РАСШИРЕНИЯ_ЯЗЫКА_pkey">
+    <key id="1124" parent="986" name="РАСШИРЕНИЯ_ЯЗЫКА_pkey">
       <ObjectId>936230</ObjectId>
       <ColNames>ИД_ЯЗЫКА
 ИД_РАСШИРЕНИЯ</ColNames>
       <UnderlyingIndexName>РАСШИРЕНИЯ_ЯЗЫКА_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1117" parent="985" name="РАСШИРЕНИЯ_ЯЗЫКА_ИД_ЯЗЫКА_fkey">
+    <foreign-key id="1125" parent="986" name="РАСШИРЕНИЯ_ЯЗЫКА_ИД_ЯЗЫКА_fkey">
       <ObjectId>936231</ObjectId>
       <ColNames>ИД_ЯЗЫКА</ColNames>
       <RefTableId>936180</RefTableId>
@@ -3890,7 +3931,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="1118" parent="985" name="РАСШИРЕНИЯ_ЯЗЫКА_ИД_РАСШИРЕНИЯ_fkey">
+    <foreign-key id="1126" parent="986" name="РАСШИРЕНИЯ_ЯЗЫКА_ИД_РАСШИРЕНИЯ_fkey">
       <ObjectId>936236</ObjectId>
       <ColNames>ИД_РАСШИРЕНИЯ</ColNames>
       <RefTableId>936215</RefTableId>
@@ -3901,7 +3942,7 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="1119" parent="986" name="ИД_ЭЛЕМЕНТА">
+    <column id="1127" parent="987" name="ИД_ЭЛЕМЕНТА">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -3909,57 +3950,57 @@
       <SequenceName>ЭЛЕМЕНТ_ИД_ЭЛЕМЕНТА_seq</SequenceName>
       <DefaultExpression>nextval(&apos;&quot;ЭЛЕМЕНТ_ИД_ЭЛЕМЕНТА_seq&quot;&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="1120" parent="986" name="НАЗВАНИЕ">
+    <column id="1128" parent="987" name="НАЗВАНИЕ">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4733583</StateNumber>
     </column>
-    <column id="1121" parent="986" name="ИД_ВИДА">
+    <column id="1129" parent="987" name="ИД_ВИДА">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <StateNumber>4733583</StateNumber>
     </column>
-    <column id="1122" parent="986" name="СОСТОЯНИЕ">
+    <column id="1130" parent="987" name="СОСТОЯНИЕ">
       <Position>4</Position>
       <DataType>boolean|0</DataType>
       <StateNumber>4733583</StateNumber>
     </column>
-    <column id="1123" parent="986" name="ЧИСЛО_ГОВОРЯЩИХ">
+    <column id="1131" parent="987" name="ЧИСЛО_ГОВОРЯЩИХ">
       <Position>5</Position>
       <DataType>bigint|0</DataType>
       <StateNumber>4733583</StateNumber>
     </column>
-    <index id="1124" parent="986" name="ЭЛЕМЕНТ_pkey">
+    <index id="1132" parent="987" name="ЭЛЕМЕНТ_pkey">
       <ObjectId>936188</ObjectId>
       <ColNames>ИД_ЭЛЕМЕНТА</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="1125" parent="986" name="ЭЛЕМЕНТ_НАЗВАНИЕ_key">
+    <index id="1133" parent="987" name="ЭЛЕМЕНТ_НАЗВАНИЕ_key">
       <ObjectId>936190</ObjectId>
       <ColNames>НАЗВАНИЕ</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="1126" parent="986" name="indon">
+    <index id="1134" parent="987" name="indon">
       <ObjectId>1025535</ObjectId>
       <ColNames>НАЗВАНИЕ</ColNames>
     </index>
-    <index id="1127" parent="986" name="indonname">
+    <index id="1135" parent="987" name="indonname">
       <ObjectId>972696</ObjectId>
       <ColNames>НАЗВАНИЕ</ColNames>
     </index>
-    <key id="1128" parent="986" name="ЭЛЕМЕНТ_pkey">
+    <key id="1136" parent="987" name="ЭЛЕМЕНТ_pkey">
       <ObjectId>936189</ObjectId>
       <ColNames>ИД_ЭЛЕМЕНТА</ColNames>
       <UnderlyingIndexName>ЭЛЕМЕНТ_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="1129" parent="986" name="ЭЛЕМЕНТ_НАЗВАНИЕ_key">
+    <key id="1137" parent="987" name="ЭЛЕМЕНТ_НАЗВАНИЕ_key">
       <ObjectId>936191</ObjectId>
       <ColNames>НАЗВАНИЕ</ColNames>
       <UnderlyingIndexName>ЭЛЕМЕНТ_НАЗВАНИЕ_key</UnderlyingIndexName>
     </key>
-    <foreign-key id="1130" parent="986" name="ЭЛЕМЕНТ_ИД_ВИДА_fkey">
+    <foreign-key id="1138" parent="987" name="ЭЛЕМЕНТ_ИД_ВИДА_fkey">
       <ObjectId>936192</ObjectId>
       <ColNames>ИД_ВИДА</ColNames>
       <RefTableId>936167</RefTableId>
@@ -3970,12 +4011,12 @@
       <OnDelete>set-null</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <check id="1131" parent="986" name="number_of_users">
+    <check id="1139" parent="987" name="number_of_users">
       <ObjectId>936184</ObjectId>
       <ColNames>ЧИСЛО_ГОВОРЯЩИХ</ColNames>
       <Predicate>&quot;ЧИСЛО_ГОВОРЯЩИХ&quot; &gt;= 0</Predicate>
     </check>
-    <trigger id="1132" parent="986" name="doacheck">
+    <trigger id="1140" parent="987" name="doacheck">
       <ObjectId>936390</ObjectId>
       <StateNumber>4733600</StateNumber>
       <Turn>after-row</Turn>
@@ -3983,7 +4024,7 @@
       <FireMode>origin</FireMode>
       <CallRoutineId>936389</CallRoutineId>
     </trigger>
-    <trigger id="1133" parent="986" name="uhoo">
+    <trigger id="1141" parent="987" name="uhoo">
       <ObjectId>936388</ObjectId>
       <StateNumber>4733598</StateNumber>
       <Turn>after-row</Turn>
@@ -3991,91 +4032,91 @@
       <FireMode>origin</FireMode>
       <CallRoutineId>936387</CallRoutineId>
     </trigger>
-    <argument id="1134" parent="987">
+    <argument id="1142" parent="988">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1135" parent="988">
+    <argument id="1143" parent="989">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1136" parent="989">
+    <argument id="1144" parent="990">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1137" parent="990">
+    <argument id="1145" parent="991">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1138" parent="991">
+    <argument id="1146" parent="992">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1139" parent="992">
+    <argument id="1147" parent="993">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1140" parent="993">
+    <argument id="1148" parent="994">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1141" parent="994">
+    <argument id="1149" parent="995">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>trigger|0</DataType>
     </argument>
-    <argument id="1142" parent="995">
+    <argument id="1150" parent="996">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1143" parent="996">
+    <argument id="1151" parent="997">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1144" parent="997">
+    <argument id="1152" parent="998">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1145" parent="998">
+    <argument id="1153" parent="999">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1146" parent="999">
+    <argument id="1154" parent="1000">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1147" parent="1000">
+    <argument id="1155" parent="1001">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1148" parent="1001">
+    <argument id="1156" parent="1002">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1149" parent="1002">
+    <argument id="1157" parent="1003">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1150" parent="1003">
+    <argument id="1158" parent="1004">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1151" parent="1004">
+    <argument id="1159" parent="1005">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1152" parent="1005">
+    <argument id="1160" parent="1006">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1153" parent="1006">
+    <argument id="1161" parent="1007">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1154" parent="1007">
+    <argument id="1162" parent="1008">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0</DataType>
     </argument>
-    <argument id="1155" parent="1008">
+    <argument id="1163" parent="1009">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>trigger|0</DataType>
     </argument>

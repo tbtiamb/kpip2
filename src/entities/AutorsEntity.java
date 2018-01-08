@@ -1,28 +1,41 @@
 package entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Date;
 
 @Entity
 @Table(name = "АВТОРЫ", schema = "s223552", catalog = "studs")
-public class AutorsEntity {
+public class AutorsEntity implements Serializable{
+    private static final int serialVersionUID = 1;
+
     private int autor_id;
     private String firstName;
     private String secondName;
+    private Integer nation_id;
     private Date dateOfBirth;
     private Date dateOfDeath;
 
     public AutorsEntity() {}
 
-    public AutorsEntity(int autor_id, String firstName, String secondName, Date dateOfBirthday, Date dateOfDeath) {
-        this.autor_id = autor_id;
+    public AutorsEntity(String firstName, String secondName, Integer nation_id, Date dateOfBirth, Date dateOfDeath) {
         this.firstName = firstName;
         this.secondName = secondName;
-        this.dateOfBirth = dateOfBirthday;
+        this.nation_id = nation_id;
+        this.dateOfBirth = dateOfBirth;
         this.dateOfDeath = dateOfDeath;
     }
 
+    public static void addElem(AutorsEntity elem) {
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Languages");
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ИД_АВТОРА")
     public int getAutor_id() {
         return autor_id;
@@ -38,8 +51,8 @@ public class AutorsEntity {
         return firstName;
     }
 
-    public void setFirstName(String name) {
-        this.firstName = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     @Basic
@@ -50,6 +63,16 @@ public class AutorsEntity {
 
     public void setSecondName(String secondName) {
         this.secondName = secondName;
+    }
+
+    @Basic
+    @Column(name = "ИД_НАЦИОНАЛЬНОСТИ")
+    public Integer getNation_id() {
+        return nation_id;
+    }
+
+    public void setNation_id(Integer nation_id) {
+        this.nation_id = nation_id;
     }
 
     @Basic
@@ -82,6 +105,8 @@ public class AutorsEntity {
         if (autor_id != that.autor_id) return false;
         if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
         if (secondName != null ? !secondName.equals(that.secondName) : that.secondName != null) return false;
+        if (nation_id != null ? !nation_id.equals(that.nation_id) : that.nation_id != null)
+            return false;
         if (dateOfBirth != null ? !dateOfBirth.equals(that.dateOfBirth) : that.dateOfBirth != null) return false;
         if (dateOfDeath != null ? !dateOfDeath.equals(that.dateOfDeath) : that.dateOfDeath != null) return false;
 
@@ -93,6 +118,7 @@ public class AutorsEntity {
         int result = autor_id;
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (secondName != null ? secondName.hashCode() : 0);
+        result = 31 * result + (nation_id != null ? nation_id.hashCode() : 0);
         result = 31 * result + (dateOfBirth != null ? dateOfBirth.hashCode() : 0);
         result = 31 * result + (dateOfDeath != null ? dateOfDeath.hashCode() : 0);
         return result;
