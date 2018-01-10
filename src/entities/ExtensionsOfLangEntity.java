@@ -1,21 +1,44 @@
 package entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "РАСШИРЕНИЯ_ЯЗЫКА", schema = "s223552", catalog = "studs")
 @IdClass(ExtensionsOfLangEntityPK.class)
-public class ExtensionsOfLangEntity {
+public class ExtensionsOfLangEntity implements Serializable{
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Language");
+    public static EntityManager em = emf.createEntityManager();
+
     private int lang_id;
     private int extensions_id;
 
-    public ExtensionsOfLangEntity() {
-    }
+    public ExtensionsOfLangEntity() {}
 
     public ExtensionsOfLangEntity(int lang_id, int extensions_id) {
         this.lang_id = lang_id;
         this.extensions_id = extensions_id;
     }
+
+    public static ExtensionsOfLangEntity readElem(int id){
+        em.getTransaction().begin();
+        ExtensionsOfLangEntity elem = em.find(ExtensionsOfLangEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
+    public static void addElem(ExtensionsOfLangEntity elem) {
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void removeElem(ExtensionsOfLangEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
+    }
+
 
     @Id
     @Column(name = "ИД_ЯЗЫКА")

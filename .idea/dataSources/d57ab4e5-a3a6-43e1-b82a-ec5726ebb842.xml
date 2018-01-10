@@ -15,7 +15,7 @@
     </database>
     <schema id="5" parent="2" name="s223552">
       <ObjectId>19197</ObjectId>
-      <IntrospectionTimestamp>2018-01-08.20:08:32.605</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-01-10.18:00:28.100</IntrospectionTimestamp>
       <IntrospectionStateNumber>6088744</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>

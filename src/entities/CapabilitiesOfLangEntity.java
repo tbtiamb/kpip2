@@ -6,15 +6,36 @@ import javax.persistence.*;
 @Table(name = "ВОЗМОЖНОСТИ_ЯЗЫКА", schema = "s223552", catalog = "studs")
 @IdClass(CapabilitiesOfLangEntityPK.class)
 public class CapabilitiesOfLangEntity {
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Language");
+    public static EntityManager em = emf.createEntityManager();
+
     private int lang_id;
     private int capability_id;
 
-    public CapabilitiesOfLangEntity() {
-    }
+    public CapabilitiesOfLangEntity() {}
 
     public CapabilitiesOfLangEntity(int lang_id, int capability_id) {
         this.lang_id = lang_id;
         this.capability_id = capability_id;
+    }
+
+    public static CapabilitiesOfLangEntity readElem(int id){
+        em.getTransaction().begin();
+        CapabilitiesOfLangEntity elem = em.find(CapabilitiesOfLangEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
+    public static void addElem(CapabilitiesOfLangEntity elem) {
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void removeElem(CapabilitiesOfLangEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
     }
 
     @Id

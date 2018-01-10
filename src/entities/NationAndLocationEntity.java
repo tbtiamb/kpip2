@@ -5,13 +5,16 @@ import javax.persistence.*;
 @Entity
 @Table(name = "НАЦИОНАЛЬНОСТЬ_И_МЕСТОПОЛОЖЕНИЕ", schema = "s223552", catalog = "studs")
 public class NationAndLocationEntity {
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Language");
+    public static EntityManager em = emf.createEntityManager();
+    private static final int serialVersionUID = 1;
+
     private int nation_id;
     private String nation;
     private String country;
     private String city;
 
-    public NationAndLocationEntity() {
-    }
+    public NationAndLocationEntity() {}
 
     public NationAndLocationEntity(int nation_id, String nation, String country, String city) {
         this.nation_id = nation_id;
@@ -20,7 +23,45 @@ public class NationAndLocationEntity {
         this.city = city;
     }
 
+    public static ElementEntity readElem(int id){
+        em.getTransaction().begin();
+        ElementEntity elem = em.find(ElementEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
+    public static void addElem(ElementEntity elem) {
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void removeElem(ElementEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void updateCountry(NationAndLocationEntity elem, String newCountry){
+        em.getTransaction().begin();
+        Query query = em.createQuery("UPDATE NationAndLocationEntity element SET  element.country = :newCountry WHERE  element.nation_id = :elem_id");
+        query.setParameter("newCountry", elem);
+        query.setParameter("elem_id", elem.getNation_id());
+        int rowCount = query.executeUpdate();
+        em.getTransaction().commit();
+    }
+
+    public static void updateCity(NationAndLocationEntity elem, String newCity){
+        em.getTransaction().begin();
+        Query query = em.createQuery("UPDATE NationAndLocationEntity element SET  element.city = :newCity WHERE  element.nation_id = :elem_id");
+        query.setParameter("newCity", elem);
+        query.setParameter("elem_id", elem.getNation_id());
+        int rowCount = query.executeUpdate();
+        em.getTransaction().commit();
+    }
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ИД_НАЦИОНАЛЬНОСТИ")
     public int getNation_id() {
         return nation_id;

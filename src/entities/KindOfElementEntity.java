@@ -5,12 +5,16 @@ import javax.persistence.*;
 @Entity
 @Table(name = "ВИД_ЭЛЕМЕНТА", schema = "s223552", catalog = "studs")
 public class KindOfElementEntity {
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Language");
+    public static EntityManager em = emf.createEntityManager();
+    private static final int serialVersionUID = 1;
+
     private int kind_id;
     private String kind;
     private String subkind;
 
-    public KindOfElementEntity() {
-    }
+
+    public KindOfElementEntity() {}
 
     public KindOfElementEntity(int kind_id, String kind, String subkind) {
         this.kind_id = kind_id;
@@ -18,7 +22,28 @@ public class KindOfElementEntity {
         this.subkind = subkind;
     }
 
+    public static KindOfElementEntity readElem(int id){
+        em.getTransaction().begin();
+        KindOfElementEntity elem = em.find(KindOfElementEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
+    public static void addElem(KindOfElementEntity elem) {
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void removeElem(KindOfElementEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
+    }
+
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ИД_ВИДА")
     public int getKind_id() {
         return kind_id;

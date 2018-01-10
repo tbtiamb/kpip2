@@ -5,12 +5,17 @@ import javax.persistence.*;
 @Entity
 @Table(name = "ВОЗМОЖНОСТИ", schema = "s223552", catalog = "studs")
 public class CapabilitiesEntity {
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Language");
+    public static EntityManager em = emf.createEntityManager();
+    private static final int serialVersionUID = 1;
+
     private int capability_id;
     private String capability;
     private String version;
 
-    public CapabilitiesEntity() {
-    }
+
+
+    public CapabilitiesEntity() {}
 
     public CapabilitiesEntity(int capability_id, String capability, String version) {
         this.capability_id = capability_id;
@@ -18,7 +23,38 @@ public class CapabilitiesEntity {
         this.version = version;
     }
 
+
+    public static CapabilitiesEntity readElem(int id){
+        em.getTransaction().begin();
+        CapabilitiesEntity elem = em.find(CapabilitiesEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
+    public static void addElem(CapabilitiesEntity elem) {
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void removeElem(CapabilitiesEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void updateVersion(CapabilitiesEntity elem, String vers){
+        em.getTransaction().begin();
+        Query query = em.createQuery("UPDATE CapabilitiesEntity capability SET  capability.version = :vers WHERE  capability.capability_id = :elem_id");
+        query.setParameter("vers", vers);
+        query.setParameter("elem_id", elem.getCapability_id());
+        int rowCount = query.executeUpdate();
+        em.getTransaction().commit();
+    }
+
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ИД_ВОЗМОЖНОСТИ")
     public int getCapability_id() {
         return capability_id;

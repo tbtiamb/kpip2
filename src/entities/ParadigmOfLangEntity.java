@@ -6,15 +6,37 @@ import javax.persistence.*;
 @Table(name = "КЛАСС_ЯЗЫКА", schema = "s223552", catalog = "studs")
 @IdClass(ParadigmOfLangEntityPK.class)
 public class ParadigmOfLangEntity {
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Languages");
+    public static EntityManager em = emf.createEntityManager();
+
+
     private int lang_id;
     private int paradigm_id;
 
-    public ParadigmOfLangEntity() {
-    }
+    public ParadigmOfLangEntity() {}
 
     public ParadigmOfLangEntity(int lang_id, int paradigm_id) {
         this.lang_id = lang_id;
         this.paradigm_id = paradigm_id;
+    }
+
+    public static ParadigmOfLangEntity readElem(int id){
+        em.getTransaction().begin();
+        ParadigmOfLangEntity elem = em.find(ParadigmOfLangEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
+    public static void addElem(ParadigmOfLangEntity elem) {
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void removeElem(ParadigmOfLangEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
     }
 
     @Id
@@ -28,6 +50,7 @@ public class ParadigmOfLangEntity {
     }
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ИД_ПАРАДИГМЫ")
     public int getParadigm_id() {
         return paradigm_id;

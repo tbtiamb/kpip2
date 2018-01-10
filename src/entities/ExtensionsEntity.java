@@ -5,18 +5,51 @@ import javax.persistence.*;
 @Entity
 @Table(name = "РАСШИРЕНИЯ", schema = "s223552", catalog = "studs")
 public class ExtensionsEntity {
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Language");
+    public static EntityManager em = emf.createEntityManager();
+    private static final int serialVersionUID = 1;
+
     private int extension_id;
     private String extension;
 
-    public ExtensionsEntity() {
-    }
+    public ExtensionsEntity() {}
 
     public ExtensionsEntity(int extension_id, String extension) {
         this.extension_id = extension_id;
         this.extension = extension;
     }
 
+    public static ExtensionsEntity readElem(int id){
+        em.getTransaction().begin();
+        ExtensionsEntity elem = em.find(ExtensionsEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
+    public static void addElem(ExtensionsEntity elem) {
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void removeElem(ExtensionsEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void updateStatus(ExtensionsEntity elem, String ext){
+        em.getTransaction().begin();
+        Query query = em.createQuery("UPDATE ExtensionsEntity extension SET  extension.extension = :ext WHERE  extension.extension_id = :elem_id");
+        query.setParameter("ext", ext);
+        query.setParameter("elem_id", elem.getExtension_id());
+        int rowCount = query.executeUpdate();
+        em.getTransaction().commit();
+    }
+
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ИД_РАСШИРЕНИЯ")
     public int getExtension_id() {
         return extension_id;

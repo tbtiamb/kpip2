@@ -7,6 +7,8 @@ import java.sql.Date;
 @Entity
 @Table(name = "АВТОРЫ", schema = "s223552", catalog = "studs")
 public class AutorsEntity implements Serializable{
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Language");
+    public static EntityManager em = emf.createEntityManager();
     private static final int serialVersionUID = 1;
 
     private int autor_id;
@@ -26,16 +28,55 @@ public class AutorsEntity implements Serializable{
         this.dateOfDeath = dateOfDeath;
     }
 
+
+    public static AutorsEntity readElem(int id){
+        em.getTransaction().begin();
+        AutorsEntity elem = em.find(AutorsEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
     public static void addElem(AutorsEntity elem) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Languages");
-        EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         em.persist(elem);
         em.getTransaction().commit();
     }
 
+    public static void removeElem(AutorsEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void updateFirstName(AutorsEntity elem, String firstName){
+        em.getTransaction().begin();
+        Query query = em.createQuery("UPDATE AutorsEntity autor SET  autor.firstName = :firstName WHERE  autor.autor_id = :elem_id");
+        query.setParameter("firstName", firstName);
+        query.setParameter("elem_id", elem.getAutor_id());
+        int rowCount = query.executeUpdate();
+        em.getTransaction().commit();
+    }
+
+    public static void updateSecondName(AutorsEntity elem, String secondName){
+        em.getTransaction().begin();
+        Query query = em.createQuery("UPDATE AutorsEntity autor SET  autor.secondName = :secindName WHERE  autor.autor_id = :elem_id");
+        query.setParameter("secindName", secondName);
+        query.setParameter("elem_id", elem.getAutor_id());
+        int rowCount = query.executeUpdate();
+        em.getTransaction().commit();
+    }
+
+    public static void updateDateOfDeath(AutorsEntity elem, Date dod){
+        em.getTransaction().begin();
+        Query query = em.createQuery("UPDATE AutorsEntity autor SET  autor.dateOfDeath = :dod WHERE  autor.autor_id = :elem_id");
+        query.setParameter("dod", dod);
+        query.setParameter("elem_id", elem.getAutor_id());
+        int rowCount = query.executeUpdate();
+        em.getTransaction().commit();
+    }
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ИД_АВТОРА")
     public int getAutor_id() {
         return autor_id;

@@ -6,6 +6,9 @@ import javax.persistence.*;
 @Table(name = "АВТОР_ЯЗЫКА", schema = "s223552", catalog = "studs")
 @IdClass(AutorOfLangEntityPK.class)
 public class AutorOfLangEntity {
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Language");
+    public static EntityManager em = emf.createEntityManager();
+    
     private int lang_id;
     private int autor_id;
 
@@ -16,6 +19,25 @@ public class AutorOfLangEntity {
         this.autor_id = autor_id;
     }
 
+    public static AutorOfLangEntity readElem(int id){
+        em.getTransaction().begin();
+        AutorOfLangEntity elem = em.find(AutorOfLangEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
+    public static void addElem(AutorOfLangEntity elem) {
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void removeElem(AutorOfLangEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
+    }
+    
     @Id
     @Column(name = "ИД_ЯЗЫКА")
     public int getLang_id() {

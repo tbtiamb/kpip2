@@ -5,6 +5,10 @@ import javax.persistence.*;
 @Entity
 @Table(name = "ИЕРАРХИЯ", schema = "s223552", catalog = "studs")
 public class HierarchyEntity {
+    public static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Language");
+    public static EntityManager em = emf.createEntityManager();
+    private static final int serialVersionUID = 1;
+
     private int element;
     private Integer level;
 
@@ -16,7 +20,28 @@ public class HierarchyEntity {
         this.level = level;
     }
 
+    public static HierarchyEntity readElem(int id){
+        em.getTransaction().begin();
+        HierarchyEntity elem = em.find(HierarchyEntity.class, id);
+        em.getTransaction().commit();
+        return elem;
+    }
+
+    public static void addElem(HierarchyEntity elem) {
+        em.getTransaction().begin();
+        em.persist(elem);
+        em.getTransaction().commit();
+    }
+
+    public static void removeElem(HierarchyEntity elem) {
+        em.getTransaction().begin();
+        em.remove(elem);
+        em.getTransaction().commit();
+    }
+
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ЭЛЕМЕНТ")
     public int getElement() {
         return element;
